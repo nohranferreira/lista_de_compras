@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lista de compras</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main class="conteudo">
+			<div class="principal">
+				<div class="mochila"></div>
+				<form action="" class="adicionar" id="novoItem">
+					<label for="item">Nome</label>
+					<input type="text" name="nome" id="nome" />
+					<label for="item">Quantidade</label>
+					<input type="number" name="quantidade" id="quantidade" />
+					<select name="categoria">
+						<option value="">Selecione a categoria</option>
+						<option value="limpeza e higiene">Limpeza e Higiene</option>
+						<option value="mercearia">Mercearia</option>
+						<option value="horti-fruti">Horti-Fruti</option>
+						<option value="perecivel">Perecível</option>
+					</select>
+					<input type="submit" value="Adicionar" class="cadastrar" />
+				</form>
+			</div>
+			<input
+				type="text"
+				id="campoBusca"
+				placeholder="buscar produto ou categoria"
+			/>
+			<ul class="lista" id="lista"></ul>
+		</main>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
